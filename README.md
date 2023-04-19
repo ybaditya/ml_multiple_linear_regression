@@ -1,6 +1,4 @@
-#MACHINE LEARNING APPS 
-#MULTIPLE LINEAR REGRESSION
-
+#MACHINE LEARNING APPS (MULTIPLE LINEAR REGRESSION)
 
 (enter an excel file, select parameter, train model, predict the result in multiple linear regression, download the machine learning model)
 
