@@ -14,7 +14,7 @@ from sklearn.linear_model import LinearRegression
 st.set_page_config(page_title='Machine Learning App')
 st.title("Machine Learning")
 st.subheader("Multiple Linear Regression")
-st.write(":blue[version : 00-00.ML.LR.0323]")
+st.write(":blue[version : 00-00.ML.MLR.0323]")
 
 st.caption("""Multiple Linear Regression is one of the important regression algorithms which models the linear relationship between a single dependent continuous variable and more than one independent variable.""")
 st.caption("The Formula of Multiple Linear Regression : **Y = a1.x1 + a2.x2 + ... + an.xn + b**")
@@ -107,7 +107,9 @@ def multiple_regression():
 
 st.sidebar.write("_**Input Machine Learning Parameter**_")
 test = st.sidebar.slider("Input test size",min_value=0.1, max_value=0.4)
+st.sidebar.caption("define test size from the dataset. 0.2 mean 20% from total dataset")
 random = st.sidebar.number_input("Input random state", min_value=0, max_value=50)    
+st.sidebar.caption("random state is a model hyperparameter used to control the randomness involved in machine learning models")    
 
 ml_button = st.sidebar.button("Run")
 
@@ -123,6 +125,6 @@ if ml_button:
     multiple_regression()
     
 
-#https://github.com/sermonzagoto/machine_Larning_with_Python/blob/master/Machine_Learning_with_Python.ipynb
+
 
 
